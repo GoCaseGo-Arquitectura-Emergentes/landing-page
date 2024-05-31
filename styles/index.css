@@ -243,4 +243,13 @@ m-width {
     flex-shrink: 0;
 
 }
-
+@media (max-width: 870px) {
+    .section.two.benefits {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .benefits .image, .benefits .content {
+        width: 100%;
+    }
+}
