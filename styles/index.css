@@ -172,8 +172,15 @@ m-width {
 }
 .service img {
     border-radius: 10px;
+    width: 100%;
 }
 .service p {
     color: #2E2E2E;
     text-align: justify;
+}
+@media (max-width: 870px) {
+    .section {
+        max-width: 95%;
+        margin: 25px auto;
+    }
 }
