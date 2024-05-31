@@ -44,7 +44,7 @@ html {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 40px;
+    padding: 40px 115px 40px 40px;
 }
 .header .navigation {
     display: flex;
@@ -68,7 +68,7 @@ m-width {
 .menu-icon {
     display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 870px) {
     .header .navigation {
         display: none;
         flex-direction: column;
@@ -299,4 +299,16 @@ footer p {
     font-weight: 600;
     text-align: center;
     margin: 0;
+}
+.language {
+    position: absolute;
+    right: 40px;
+    background: transparent;
+    padding: 2px 2px;
+    border-radius: 5px;
+    border-color: white;
+    font-family: Poppins;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
 }
