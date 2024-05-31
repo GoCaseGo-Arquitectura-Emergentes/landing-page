@@ -61,4 +61,37 @@ m-width {
 .menu-icon {
     display: none;
 }
+@media (max-width: 800px) {
+    .header .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0,0,0, 0.3);
+    }
 
+    .header .navigation.active {
+        position: absolute;
+        display: flex;
+        top:115px;
+        left: 0;
+        padding: 20px;
+        gap: 0;
+    }
+    .header .navigation a:first-child {
+        border: 0;
+    }
+    .header .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(0,0,0, 0.2);
+        padding: 20px 0;
+    }
+
+    .menu-icon {
+        color: white;
+        display: block;
+    }
+    .menu-icon:hover {
+        cursor: pointer;
+    }
+}
