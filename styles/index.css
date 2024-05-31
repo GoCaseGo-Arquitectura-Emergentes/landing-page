@@ -107,7 +107,7 @@ m-width {
 .banner {
     margin-top: -137px;
     min-height: calc(100vh - 100px);
-    background: url(/assets/images/bg-tour-banner.jpg);
+    background: url(./assets/images/bg-tour-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
