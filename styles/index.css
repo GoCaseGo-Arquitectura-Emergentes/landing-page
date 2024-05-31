@@ -1,0 +1,64 @@
+/* Global Styles */
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Poppins';
+}
+h1, h2, h3 {
+    font-weight: 700;
+}
+a, h4, h5, h6 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 45px;
+}
+h2 {
+    font-size:  35px;
+    line-height: 30px;
+}
+h3 {
+    font-size: 30px;
+    line-height: 25px;
+}
+h4, h5, h6 {
+    font-size: 25px;
+    line-height: 20px;
+}
+p, a, span {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+.header .navigation {
+    display: flex;
+    gap: 30px;
+}
+.header .navigation a {
+    font-weight: 600;
+    color: white;
+}
+.header > a span {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+    color: white;
+}
+
+m-width { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu-icon {
+    display: none;
+}
+
