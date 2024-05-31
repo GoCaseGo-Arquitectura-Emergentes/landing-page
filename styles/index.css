@@ -1,0 +1,302 @@
+/* Global Styles */
+h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: 'Poppins';
+}
+h1, h2, h3 {
+    font-weight: 700;
+}
+a, h4, h5, h6 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 45px;
+}
+h2 {
+    font-size:  35px;
+    line-height: 30px;
+}
+h3 {
+    font-size: 30px;
+    line-height: 25px;
+}
+h4, h5, h6 {
+    font-size: 25px;
+    line-height: 20px;
+}
+p, li {
+    font-size: 20px;
+    line-height: 25px;
+}
+a, span {
+    font-size: 15px;
+    line-height: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+.header .navigation {
+    display: flex;
+    gap: 30px;
+}
+.header .navigation a {
+    font-weight: 600;
+    color: white;
+}
+.header > a span {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+    color: white;
+}
+
+m-width { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu-icon {
+    display: none;
+}
+@media (max-width: 800px) {
+    .header .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0,0,0, 0.5);
+    }
+
+    .header .navigation.active {
+        position: absolute;
+        display: flex;
+        top:115px;
+        left: 0;
+        padding: 20px;
+        gap: 0;
+    }
+    .header .navigation a:first-child {
+        border: 0;
+    }
+    .header .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255, 0.2);
+        padding: 20px 0;
+    }
+
+    .menu-icon {
+        color: white;
+        display: block;
+    }
+    .menu-icon:hover {
+        cursor: pointer;
+    }
+}
+
+/* Main Content */
+.banner {
+    margin-top: -137px;
+    min-height: calc(100vh - 100px);
+    background: url(/assets/images/bg-tour-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.banner main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.banner main h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+}
+.banner main a {
+    padding: 15px 50px;
+    border-radius: 7.5px;
+    background: #252525;
+    color: white;
+    font-weight: 600;
+    transition: all .4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.banner main a:hover {
+    background: #202020;
+}
+@media (max-width: 768px) {
+    .banner main h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .banner main {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 500px) {
+    .banner main h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+/* Section Serivce */
+.section {
+   margin: 60px auto;
+   max-width: 850px; 
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.service img {
+    border-radius: 10px;
+    width: 100%;
+}
+.service p {
+    color: #2E2E2E;
+    text-align: justify;
+}
+@media (max-width: 870px) {
+    .section {
+        max-width: 95%;
+        margin: 30px auto;
+    }
+}
+
+/* How it Works, Benefits Section */
+.how-it-works, .benefits {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.how-it-works .content, .benefits .content {
+    width: 55%;
+}
+.how-it-works .content p, .benefits .content li {
+    text-align: justify;
+    color: #2E2E2E;
+}
+.how-it-works .content h2, .benefits .content h2 {
+    font-weight: 700;
+    color: #252525;
+}
+
+.how-it-works .image, .benefits .image {
+    width: 40%;
+}
+.how-it-works .image img, .benefits .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+@media (max-width: 870px) {
+    .section.two {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .how-it-works .image, .how-it-works .content {
+        width: 100%;
+    }
+}
+
+
+/* Benefits Section */
+.benefits ul {
+    padding-left: 0;
+}
+.benefits ul li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+.benefits ul li:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    background: url("/assets/icons/icon-check.svg");
+    background-size: 100%;
+    flex-shrink: 0;
+
+}
+@media (max-width: 870px) {
+    .section.two.benefits {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .benefits .image, .benefits .content {
+        width: 100%;
+    }
+}
+
+/* Video Section */
+.video {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.video > div {
+    width: 47.5%;
+}
+.video > div iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+.video h2 {
+    font-weight: 700;
+    color: #252525;
+    text-align: center;
+}
+@media (max-width: 870px) {
+    .video {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .video > div {
+        width: 100%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 40px;
+    background: #252525;
+}
+footer p {
+    color: white;
+    font-size: 17px;
+    list-style: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
