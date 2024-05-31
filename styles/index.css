@@ -26,7 +26,11 @@ h4, h5, h6 {
     font-size: 25px;
     line-height: 20px;
 }
-p, a, span {
+p {
+    font-size: 20px;
+    line-height: 25px;
+}
+a, span {
     font-size: 15px;
     line-height: 20px;
 }
@@ -152,4 +156,24 @@ m-width {
         font-size: 20px;
         line-height: 25px;
     }
+}
+
+/* Section Serivce */
+.section {
+   margin: 40px auto;
+   max-width: 850px; 
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.service img {
+    border-radius: 10px;
+}
+.service p {
+    color: #2E2E2E;
+    text-align: justify;
 }
