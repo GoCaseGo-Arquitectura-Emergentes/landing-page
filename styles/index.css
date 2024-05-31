@@ -272,3 +272,13 @@ m-width {
     color: #252525;
     text-align: center;
 }
+@media (max-width: 870px) {
+    .video {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .video > div {
+        width: 100%;
+    }
+}
