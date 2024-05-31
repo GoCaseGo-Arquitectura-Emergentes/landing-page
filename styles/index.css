@@ -34,6 +34,9 @@ a, span {
     font-size: 15px;
     line-height: 20px;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Header */
 .header {
