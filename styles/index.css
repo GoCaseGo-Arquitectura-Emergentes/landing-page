@@ -137,3 +137,19 @@ m-width {
 .banner main a:hover {
     background: #202020;
 }
+@media (max-width: 768px) {
+    .banner main h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .banner main {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 500px) {
+    .banner main h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
