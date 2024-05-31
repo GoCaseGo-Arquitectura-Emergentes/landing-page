@@ -282,3 +282,18 @@ m-width {
         width: 100%;
     }
 }
+
+/* Footer */
+
+footer {
+    padding: 40px;
+    background: #252525;
+}
+footer p {
+    color: white;
+    font-size: 17px;
+    list-style: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
