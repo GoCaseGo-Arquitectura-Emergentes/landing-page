@@ -160,7 +160,7 @@ m-width {
 
 /* Section Serivce */
 .section {
-   margin: 40px auto;
+   margin: 60px auto;
    max-width: 850px; 
 }
 .service {
@@ -181,6 +181,32 @@ m-width {
 @media (max-width: 870px) {
     .section {
         max-width: 95%;
-        margin: 25px auto;
+        margin: 30px auto;
     }
+}
+
+/* How it Works Section */
+.how-it-works {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.how-it-works .content {
+    width: 55%;
+}
+.how-it-works .content p {
+    text-align: justify;
+    color: #2E2E2E;
+}
+.how-it-works .content h2 {
+    font-weight: 700;
+    color: #252525;
+}
+
+.how-it-works .image {
+    width: 40%;
+}
+.how-it-works .image img {
+    width: 100%;
+    border-radius: 10px;
 }
