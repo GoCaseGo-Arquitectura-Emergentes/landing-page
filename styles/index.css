@@ -1,5 +1,5 @@
 /* Global Styles */
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, li {
     font-family: 'Poppins';
 }
 h1, h2, h3 {
@@ -26,7 +26,7 @@ h4, h5, h6 {
     font-size: 25px;
     line-height: 20px;
 }
-p {
+p, li {
     font-size: 20px;
     line-height: 25px;
 }
@@ -185,28 +185,28 @@ m-width {
     }
 }
 
-/* How it Works Section */
-.how-it-works {
+/* How it Works, Benefits Section */
+.how-it-works, .benefits {
     display: flex;
     gap: 5%;
     align-items: center;
 }
-.how-it-works .content {
+.how-it-works .content, .benefits .content {
     width: 55%;
 }
-.how-it-works .content p {
+.how-it-works .content p, .benefits .content li {
     text-align: justify;
     color: #2E2E2E;
 }
-.how-it-works .content h2 {
+.how-it-works .content h2, .benefits .content h2 {
     font-weight: 700;
     color: #252525;
 }
 
-.how-it-works .image {
+.how-it-works .image, .benefits .image {
     width: 40%;
 }
-.how-it-works .image img {
+.how-it-works .image img, .benefits .image img {
     width: 100%;
     border-radius: 10px;
 }
@@ -220,3 +220,27 @@ m-width {
         width: 100%;
     }
 }
+
+
+/* Benefits Section */
+.benefits ul {
+    padding-left: 0;
+}
+.benefits ul li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+.benefits ul li:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    background: url("/assets/icons/icon-check.svg");
+    background-size: 100%;
+    flex-shrink: 0;
+
+}
+
