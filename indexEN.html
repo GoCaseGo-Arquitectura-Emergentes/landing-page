@@ -1,115 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Equipa Tour Landing Page</title>
-        <link rel="stylesheet" href="/styles/index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
-
-    <body>
-        <header class="header">
-            <a href="/"><span>EquipaTour</span></a>
-
-            <nav class="navigation">
-                <a href="#service">Service</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#benefits">Benefits</a>
-                <a href="#contact">Contact</a>
-                <a href="#videos">Videos</a>
-                
-            </nav>
-            
-            <div class="menu-icon" onclick="toggleMenu()">
-                &#9776; 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipa Tour Landing Page</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="/"><span>EquipaTour</span></a>
+        <nav class="navigation">
+            <a href="#service">Service</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#contact">Contact</a>
+            <a href="#videos">Videos</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; 
+        </div>
+        <select class="language">
+            <option value="en" selected>EN</option>
+            <option value="es">ES</option>
+        </select>
+    </header>
+    <section class="banner">
+        <main>
+            <div class="title">
+                <h1>Safety and Comfort on Every Trip: Discover Our Luggage Platform</h1>
             </div>
-
-            <select class="language">
-                <option value="en" selected>EN</option>
-                <option value="es">ES</option>
-            </select>
-        </header>
-
-        <section class="banner">
-            <main>
-                <div class="title">
-                    <h1>Safety and Comfort on Every Trip: Discover Our Luggage Platform</h1>
-                </div>
-                <a href="#" class="call-to-action">Contact</a>
-            </main>
-        </section>
-
-        <section id="service" class="service section">
-            <div class="image-video">
-                <a href="#" target="_blank">
-                    <img src="/assets//images/img-service-section.jpg" alt="Image of Service"/>
-                </a>
-            </div>
-
-            <div class="content">
-                <p>
-                    At EquipaTour, we are committed to making every trip safe and worry-free for your clients. Our luggage management platform uses innovative technology to ensure that luggage is always under control, from the moment it is loaded to its final destination. With a variety of subscription plans tailored to your agency's needs, we are here to offer you a comprehensive solution that enhances your clients' travel experience and optimizes your operation's efficiency.
-                </p>
-            </div>
-        </section>
-
-        <section id="how-it-works" class="how-it-works section two">
-            <div class="content">
-                <h2>How It Works</h2>
-                <p>Our luggage management platform is easy to use and highly effective. Using smart scales and impact sensors, we monitor the weight and safety of luggage in real-time. When necessary, our platform allows for the reorganization of the vehicle's load to comply with established weight limits and ensure a safe trip. All of this is done transparently and efficiently, so you can focus on providing the best possible experience for your clients.</p>
-            </div>
-
-            <div class="image">
-                <img src="/assets/images/img-how-it-works-section.jpg" alt="Image of How it Works section" />
-            </div>
-        </section>
-
-        <section id="benefits" class="benefits section two">
-            <div class="image">
-                <img src="/assets/images/img-benefits-section.jpg" alt="Image of Benefits" />
-            </div>
-
-            <div class="content">
-                <h2>Benefits</h2>
-                <ul class="list">
-                    <li>Improves luggage safety throughout the journey.</li>
-                    <li>Optimizes luggage management, avoiding overloads and complying with established weight limits.</li>
-                    <li>Provides peace of mind to your clients by ensuring the safety of their belongings.</li>
-                    <li>Increases operational efficiency by eliminating luggage-related issues.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="contact" class="how-it-works section two">
-            <div class="content">
-                <h2>Contact Us</h2>
-                <p>Ready to improve luggage management at your tour agency? Contact us today! Send us an email at equipatour@gocasego.com and discover how our platform can transform your clients' travel experience. We are here to help you optimize safety and efficiency in every adventure you plan. We look forward to hearing from you soon!</p>
-            </div>
-
-            <div class="image">
-                <img src="/assets/images/img-contact-section.jpg" alt="Image of Contact section" />
-            </div>
-        </section>
-        
-        <section id="videos" class="video section">
-            <div class="video-section">
-                <h2>About The Team</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/C0DPdy98e4c?si=8TIzdEzbR8s11vz1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="video-section">
-                <h2>About the Product</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/C0DPdy98e4c?si=8TIzdEzbR8s11vz1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <footer>
-            <p>All rights reserved. EquipaTour 2024.</p>
-        </footer>
-        <script src="/assets/js/index.js"></script>
-    </body>
-</html> 
+            <a href="#" class="call-to-action">Contact</a>
+        </main>
+    </section>
+    <section id="service" class="service section">
+        <div class="image-video">
+            <a href="#" target="_blank">
+                <img src="assets/images/img-service-section.jpg" alt="Image of Service"/>
+            </a>
+        </div>
+        <div class="content">
+            <p>
+                At EquipaTour, we are committed to making every trip safe and worry-free for your clients. Our luggage management platform uses innovative technology to ensure that luggage is always under control, from the moment it is loaded to its final destination. With a variety of subscription plans tailored to your agency's needs, we are here to offer you a comprehensive solution that enhances your clients' travel experience and optimizes your operation's efficiency.
+            </p>
+        </div>
+    </section>
+    <section id="how-it-works" class="how-it-works section two">
+        <div class="content">
+            <h2>How It Works</h2>
+            <p>Our luggage management platform is easy to use and highly effective. Using smart scales and impact sensors, we monitor the weight and safety of luggage in real-time. When necessary, our platform allows for the reorganization of the vehicle's load to comply with established weight limits and ensure a safe trip. All of this is done transparently and efficiently, so you can focus on providing the best possible experience for your clients.</p>
+        </div>
+        <div class="image">
+            <img src="assets/images/img-how-it-works-section.jpg" alt="Image of How it Works section" />
+        </div>
+    </section>
+    <section id="benefits" class="benefits section two">
+        <div class="image">
+            <img src="assets/images/img-benefits-section.jpg" alt="Image of Benefits" />
+        </div>
+        <div class="content">
+            <h2>Benefits</h2>
+            <ul class="list">
+                <li>Improves luggage safety throughout the journey.</li>
+                <li>Optimizes luggage management, avoiding overloads and complying with established weight limits.</li>
+                <li>Provides peace of mind to your clients by ensuring the safety of their belongings.</li>
+                <li>Increases operational efficiency by eliminating luggage-related issues.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact" class="how-it-works section two">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Ready to improve luggage management at your tour agency? Contact us today! Send us an email at equipatour@gocasego.com and discover how our platform can transform your clients' travel experience. We are here to help you optimize safety and efficiency in every adventure you plan. We look forward to hearing from you soon!</p>
+        </div>
+        <div class="image">
+            <img src="assets/images/img-contact-section.jpg" alt="Image of Contact section" />
+        </div>
+    </section>
+    <section id="videos" class="video section">
+        <div class="video-section">
+            <h2>About The Team</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C0DPdy98e4c?si=8TIzdEzbR8s11vz1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-section">
+            <h2>About the Product</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C0DPdy98e4c?si=8TIzdEzbR8s11vz1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer>
+        <p>All rights reserved. EquipaTour 2024.</p>
+    </footer>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
