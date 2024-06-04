@@ -107,7 +107,7 @@ m-width {
 .banner {
     margin-top: -137px;
     min-height: calc(100vh - 100px);
-    background: url(landing-page/assets/images/bg-tour-banner.jpg);
+    background: url(https://gocasego-arquitectura-emergentes.github.io/landing-page/assets/images/bg-tour-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -241,7 +241,7 @@ m-width {
     width: 20px;
     height: 20px;
     margin-top: 3px;
-    background: url("/assets/icons/icon-check.svg");
+    background: url("https://gocasego-arquitectura-emergentes.github.io/landing-page/assets/icons/icon-check.svg");
     background-size: 100%;
     flex-shrink: 0;
 
